@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shirnin.hardfighter.FightActivity">
+
+    <ImageView
+        android:id="@+id/heroImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15sp"
+        android:layout_marginBottom="150sp"
+        android:adjustViewBounds="true"
+        android:foregroundGravity="top"
+        android:maxHeight="200sp"
+        app:srcCompat="@drawable/hero_1" />
+
+    <TextView
+        android:id="@+id/mosnterDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgFlame"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="20sp"
+        android:minWidth="200sp"
+        android:text="@string/fight_monster_desc"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/monsterLvl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="140sp"
+        android:layout_marginRight="20sp"
+        android:adjustViewBounds="true"
+        android:foregroundGravity="top"
+        android:minWidth="200sp"
+        android:text="@string/fight_monster_lvl"
+        android:textAlignment="center"
+        android:textColor="@color/green_700"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/monsterImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="180sp"
+        android:layout_marginRight="20sp"
+        android:adjustViewBounds="true"
+        android:foregroundGravity="top"
+        android:maxHeight="200sp"
+        app:srcCompat="@drawable/monster_1" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imgFlame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="180sp"
+        android:layout_marginEnd="20sp"
+        android:adjustViewBounds="true"
+        android:foregroundGravity="top"
+        android:maxHeight="200sp"
+        android:src="@drawable/flame"
+        android:visibility="invisible" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imgFlame"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginTop="180sp"-->
+<!--        android:layout_marginRight="15sp"-->
+<!--        android:adjustViewBounds="true"-->
+<!--        android:foregroundGravity="top"-->
+<!--        android:maxHeight="200sp"-->
+<!--        app:srcCompat="@drawable/flame" />-->
+
+    <Button
+        android:id="@+id/buttonFight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20sp"
+        android:fontFamily="@font/roboto"
+        android:minWidth="300sp"
+        android:text="@string/fight_btn"
+        android:textStyle="bold" />
+
+</RelativeLayout>

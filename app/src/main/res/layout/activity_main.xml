@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shirnin.hardfighter.MainActivity">
+
+    <ImageView
+        android:id="@+id/heroImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/hero_img_desc"
+        android:maxWidth="200sp"
+        android:maxHeight="200sp"
+        android:src="@drawable/hero_1"
+        tools:ignore="ImageContrastCheck" />
+
+    <LinearLayout
+        android:id="@+id/btnWrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heroImg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10sp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnTrain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto"
+            android:text="@string/btn_train"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/btnFight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto"
+            android:text="@string/btn_fight" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lvlWrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnWrapper"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20sp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/hero_lvl_label"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/mainLvl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/hero_lvl"
+            android:textColor="@color/green_700"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/characteristicWrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lvlWrapper"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        android:minWidth="300sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="@string/characteristics_title"
+            android:textAlignment="center"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15sp"
+            android:minWidth="300sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20sp"
+                android:width="135sp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/characteristic_top_label"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/topLvl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto"
+                android:text="@string/characteristic_top"
+                android:textColor="@color/green_700"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBarCharTop"
+            style="@android:style/Widget.Material.Light.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5sp"
+            android:layout_weight="1"
+            android:max="100"
+            android:progressTint="@color/green_200"
+            android:progressBackgroundTint="@color/green_200" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15sp"
+            android:minWidth="300sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20sp"
+                android:width="135sp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/characteristic_center_label"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/centerLvl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto"
+                android:text="@string/characteristic_center"
+                android:textColor="@color/green_700"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBarCharCenter"
+            style="@android:style/Widget.Material.Light.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5sp"
+            android:layout_weight="1"
+            android:max="100"
+            android:progressTint="@color/green_200"
+            android:progressBackgroundTint="@color/green_200" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15sp"
+            android:minWidth="300sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20sp"
+                android:width="135sp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/characteristic_bottom_label"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/bottomLvl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto"
+                android:text="@string/characteristic_bottom"
+                android:textColor="@color/green_700"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBarCharBottom"
+            style="@android:style/Widget.Material.Light.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5sp"
+            android:layout_weight="1"
+            android:max="100"
+            android:progressTint="@color/green_200"
+            android:progressBackgroundTint="@color/green_200" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15sp"
+            android:minWidth="300sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20sp"
+                android:width="135sp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/characteristic_endurance_label"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/enduranceLvl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto"
+                android:text="@string/characteristic_endurance"
+                android:textColor="@color/green_700"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBarCharEndurance"
+            style="@android:style/Widget.Material.Light.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5sp"
+            android:layout_weight="1"
+            android:max="100"
+            android:progressTint="@color/green_200"
+            android:progressBackgroundTint="@color/green_200" />
+    </LinearLayout>
+</RelativeLayout>

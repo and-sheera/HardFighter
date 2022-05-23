@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Hard Fighter</string>
+    <string name="status">Будь собой!</string>
+    <string name="hero_img_desc">hero</string>
+    <string name="btn_fight">Сражаться</string>
+    <string name="btn_train">Тренировка</string>
+    <string name="hero_lvl_label">Уровень:</string>
+    <string name="hero_lvl">1</string>
+    <string name="characteristics_title">Характеристики</string>
+    <string name="characteristic_top_label">Руки:</string>
+    <string name="characteristic_center_label">Торс:</string>
+    <string name="characteristic_bottom_label">Ноги:</string>
+    <string name="characteristic_endurance_label">Выносливость:</string>
+    <string name="characteristic_top">0</string>
+    <string name="characteristic_center">0</string>
+    <string name="characteristic_bottom">0</string>
+    <string name="characteristic_endurance">0</string>
+
+
+    <string name="train_title">Новая тренировка</string>
+    <string name="train_type_select_label">Выберите вид тренировки</string>
+    <string name="train_type_select_approaches_label">Количество подходов</string>
+    <string name="train_type_select_times_label">Количество раз</string>
+    <string name="train_type_select_time_label">Продолжительность (мин)</string>
+    <string name="train_btn_write">Записать</string>
+
+
+    <string name="fight_btn">Сражаться</string>
+    <string name="fight_monster_lvl">Уровень: 1</string>
+    <string name="fight_monster_desc">Для победы необходимо:</string>
+
+
+    <string name="win_monster">Победа!</string>
+    <string name="win_monster_desc">+1 уровень</string>
+
+    <string name="defeat_monster">Поражение</string>
+    <string name="defeat_monster_desc">Необходимо:</string>
+</resources>

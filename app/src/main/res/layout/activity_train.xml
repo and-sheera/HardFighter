@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shirnin.hardfighter.TrainActivity">
+
+    <TextView
+        android:id="@+id/trainTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100sp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/train_title"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/trainTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        android:minWidth="300sp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20sp"
+                android:layout_marginBottom="10sp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/train_type_select_label"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/trainType"
+                style="@android:style/Widget.Material.Light.Spinner.Underlined"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/train_type_select_label"
+                android:dropDownWidth="match_parent"
+                android:duplicateParentState="true"
+                android:gravity="start|top"
+                android:minWidth="300sp"
+                android:minHeight="48dp"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/exerciseApproaches"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20sp"
+                android:layout_marginBottom="10sp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/train_type_select_approaches_label"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/exerciseApproachesInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberSigned"
+                android:textColorHighlight="@color/green_500"
+                android:minHeight="48dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/exerciseTimes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20sp"
+                android:layout_marginBottom="10sp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/train_type_select_times_label"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/exerciseTimesInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberSigned"
+                android:minHeight="48dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/exerciseTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20sp"
+                android:layout_marginBottom="10sp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/train_type_select_time_label"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/exerciseTimeInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberSigned"
+                android:minHeight="48dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="40sp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/train_btn_write" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
